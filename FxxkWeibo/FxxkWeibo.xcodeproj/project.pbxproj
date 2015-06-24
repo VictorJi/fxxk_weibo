@@ -13,6 +13,7 @@
 		570AA12F1B3AD47900B54CD2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 570AA12E1B3AD47900B54CD2 /* Images.xcassets */; };
 		570AA1321B3AD47900B54CD2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 570AA1301B3AD47900B54CD2 /* LaunchScreen.xib */; };
 		570AA13E1B3AD47900B54CD2 /* FxxkWeiboTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570AA13D1B3AD47900B54CD2 /* FxxkWeiboTests.swift */; };
+		E0C978FB34CF944DCEB1D6DB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BA33C15AADA7C6429C8BDEA /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,10 @@
 		570AA1371B3AD47900B54CD2 /* FxxkWeiboTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FxxkWeiboTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		570AA13C1B3AD47900B54CD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		570AA13D1B3AD47900B54CD2 /* FxxkWeiboTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FxxkWeiboTests.swift; sourceTree = "<group>"; };
+		570AA1471B3ADD3100B54CD2 /* FxxkWeibo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FxxkWeibo-Bridging-Header.h"; sourceTree = "<group>"; };
+		69BDA8C46B88630D60A62357 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		8BA33C15AADA7C6429C8BDEA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCAE37DA9B64CF3A6928E3CF /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0C978FB34CF944DCEB1D6DB /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +62,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4272A9DF50D5A8FC634C7F00 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8BA33C15AADA7C6429C8BDEA /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		570AA1191B3AD47900B54CD2 = {
 			isa = PBXGroup;
 			children = (
 				570AA1241B3AD47900B54CD2 /* FxxkWeibo */,
 				570AA13A1B3AD47900B54CD2 /* FxxkWeiboTests */,
 				570AA1231B3AD47900B54CD2 /* Products */,
+				D05022E5F0FDA64A3987D8EA /* Pods */,
+				4272A9DF50D5A8FC634C7F00 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,6 +99,7 @@
 				570AA12E1B3AD47900B54CD2 /* Images.xcassets */,
 				570AA1301B3AD47900B54CD2 /* LaunchScreen.xib */,
 				570AA1251B3AD47900B54CD2 /* Supporting Files */,
+				570AA1471B3ADD3100B54CD2 /* FxxkWeibo-Bridging-Header.h */,
 			);
 			path = FxxkWeibo;
 			sourceTree = "<group>";
@@ -112,6 +129,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		D05022E5F0FDA64A3987D8EA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				69BDA8C46B88630D60A62357 /* Pods.debug.xcconfig */,
+				BCAE37DA9B64CF3A6928E3CF /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -119,9 +145,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 570AA1411B3AD47900B54CD2 /* Build configuration list for PBXNativeTarget "FxxkWeibo" */;
 			buildPhases = (
+				301FF60087F8EED26346D838 /* Check Pods Manifest.lock */,
 				570AA11E1B3AD47900B54CD2 /* Sources */,
 				570AA11F1B3AD47900B54CD2 /* Frameworks */,
 				570AA1201B3AD47900B54CD2 /* Resources */,
+				49233BD51FD33207D393120C /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -206,6 +234,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		301FF60087F8EED26346D838 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		49233BD51FD33207D393120C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		570AA11E1B3AD47900B54CD2 /* Sources */ = {
@@ -338,22 +399,29 @@
 		};
 		570AA1421B3AD47900B54CD2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69BDA8C46B88630D60A62357 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Yinbo Ji (JU79DVB3FX)";
 				INFOPLIST_FILE = FxxkWeibo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FxxkWeibo/FxxkWeibo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		570AA1431B3AD47900B54CD2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCAE37DA9B64CF3A6928E3CF /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = FxxkWeibo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FxxkWeibo/FxxkWeibo-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -410,6 +478,7 @@
 				570AA1431B3AD47900B54CD2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		570AA1441B3AD47900B54CD2 /* Build configuration list for PBXNativeTarget "FxxkWeiboTests" */ = {
 			isa = XCConfigurationList;
@@ -418,6 +487,7 @@
 				570AA1461B3AD47900B54CD2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

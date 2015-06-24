@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>F29E954B-7426-458E-ACBA-7BA6892317A7</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>FxxkWeibo</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>50A2CFB0AFBC7F4CC6AF7A4ABDCB931BE3534EF1</key>
 		<string>github.com:VictorJi/fxxk_weibo.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>FxxkWeibo/FxxkWeibo.xcodeproj/project.xcworkspace</string>
+	<string>FxxkWeibo/FxxkWeibo.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>50A2CFB0AFBC7F4CC6AF7A4ABDCB931BE3534EF1</key>
