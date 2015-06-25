@@ -1,0 +1,14 @@
+PODS:
+  - WeiboSDK (3.0.1)
+
+DEPENDENCIES:
+  - WeiboSDK (from `https://raw.githubusercontent.com/sinaweibosdk/weibo_ios_sdk/master/WeiboSDK.podspec`)
+
+EXTERNAL SOURCES:
+  WeiboSDK:
+    :podspec: https://raw.githubusercontent.com/sinaweibosdk/weibo_ios_sdk/master/WeiboSDK.podspec
+
+SPEC CHECKSUMS:
+  WeiboSDK: 852b2733a7a39e7e34400f6486e453ca389ce189
+
+COCOAPODS: 0.37.2
