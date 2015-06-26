@@ -8,11 +8,12 @@
 
 import UIKit
 
+var accessToken : String = ""
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, WeiboSDKDelegate {
 
     var window: UIWindow?
-
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
@@ -53,6 +54,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, WeiboSDKDelegate {
         return WeiboSDK.handleOpenURL(url, delegate: self)
     }
     
+    //MARK: WeiboSDK delegate
     func didReceiveWeiboRequest(request: WBBaseRequest!) {
         if request is WBProvideMessageForWeiboRequest {
             print("aaaaa")
@@ -63,12 +65,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate, WeiboSDKDelegate {
     
     func didReceiveWeiboResponse(response: WBBaseResponse!) {
         if response is WBProvideMessageForWeiboResponse {
-            let message = "响应状态:\(response.statusCode.rawValue)\n响应UserInfo数据:\(response.userInfo)\n原请求UserInfo数据:\(response.requestUserInfo)"
+            let message = "响应状态:\(response.statusCode.rawValue)<>响应UserInfo数据:\(response.userInfo)<>原请求UserInfo数据:\(response.requestUserInfo)"
             let alert = UIAlertView(title: "发送结果", message: message, delegate: nil, cancelButtonTitle: "确定")
             alert.show()
         } else if response is WBAuthorizeResponse {
 //            let res = response as? WBAuthorizeResponse
-            let message = "响应状态: \(response.statusCode.rawValue)\nresponse.userId: \((response as? WBAuthorizeResponse)!.userID)\nresponse.accessToken: \((response as? WBAuthorizeResponse)!.accessToken)\n响应UserInfo数据: \(response.userInfo)\n原请求UserInfo数据: \(response.requestUserInfo)"
+            let message = "响应状态: \(response.statusCode.rawValue)<>response.userId: \((response as? WBAuthorizeResponse)!.userID)<>response.accessToken: \((response as? WBAuthorizeResponse)!.accessToken)<>响应UserInfo数据: \(response.userInfo)<>原请求UserInfo数据: \(response.requestUserInfo)"
+            
+            accessToken = (response as? WBAuthorizeResponse)!.accessToken
+            
             let alert = UIAlertView(title: "认证结果", message: message, delegate: nil, cancelButtonTitle: "确定")
             alert.show()
         }

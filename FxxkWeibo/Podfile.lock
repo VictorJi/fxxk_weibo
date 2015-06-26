@@ -1,7 +1,29 @@
 PODS:
+  - AFNetworking (2.5.4):
+    - AFNetworking/NSURLConnection (= 2.5.4)
+    - AFNetworking/NSURLSession (= 2.5.4)
+    - AFNetworking/Reachability (= 2.5.4)
+    - AFNetworking/Security (= 2.5.4)
+    - AFNetworking/Serialization (= 2.5.4)
+    - AFNetworking/UIKit (= 2.5.4)
+  - AFNetworking/NSURLConnection (2.5.4):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.5.4):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.5.4)
+  - AFNetworking/Security (2.5.4)
+  - AFNetworking/Serialization (2.5.4)
+  - AFNetworking/UIKit (2.5.4):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
   - WeiboSDK (3.0.1)
 
 DEPENDENCIES:
+  - AFNetworking
   - WeiboSDK (from `https://raw.githubusercontent.com/sinaweibosdk/weibo_ios_sdk/master/WeiboSDK.podspec`)
 
 EXTERNAL SOURCES:
@@ -9,6 +31,7 @@ EXTERNAL SOURCES:
     :podspec: https://raw.githubusercontent.com/sinaweibosdk/weibo_ios_sdk/master/WeiboSDK.podspec
 
 SPEC CHECKSUMS:
+  AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
   WeiboSDK: 852b2733a7a39e7e34400f6486e453ca389ce189
 
 COCOAPODS: 0.37.2
