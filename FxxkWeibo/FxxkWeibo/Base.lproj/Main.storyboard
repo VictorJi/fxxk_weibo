@@ -45,6 +45,13 @@
                                     <action selector="sendTextButtonClickAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GCd-qC-BCS"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qgB-1y-wEt">
+                                <rect key="frame" x="137" y="61" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="aaButtonClickAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tNc-le-kkt"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
